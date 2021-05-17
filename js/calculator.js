@@ -4,31 +4,11 @@ let operator
 let resultNumber = 0;
 let previousNumber = 0
 
-
-function plus() {
-    getNumberAndClearInput()
-    operator = '+'
-} 
-
-function minus() {
-    getNumberAndClearInput()
-    operator = '-'
-} 
-
-function multiplication() {
-    getNumberAndClearInput()
-    operator = '*'
-} 
-
-function division() {
-    getNumberAndClearInput()
-    operator = '/'
-} 
-
-function getNumberAndClearInput(){
+function operation(sym) {
     previousNumber = +input.value
     input.value = 0
-}
+    operator = sym
+} 
 
 function getResult() {
     newNumber = +input.value
