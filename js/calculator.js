@@ -6,28 +6,29 @@ let previousNumber = 0
 
 
 function plus() {
-    previousNumber = +input.value
-    input.value = 0
+    getNumberAndClearInput()
     operator = '+'
 } 
 
 function minus() {
-    previousNumber = +input.value
-    input.value = 0
+    getNumberAndClearInput()
     operator = '-'
 } 
 
 function multiplication() {
-    previousNumber = +input.value
-    input.value = 0
+    getNumberAndClearInput()
     operator = '*'
 } 
 
 function division() {
-    previousNumber = +input.value
-    input.value = 0
+    getNumberAndClearInput()
     operator = '/'
 } 
+
+function getNumberAndClearInput(){
+    previousNumber = +input.value
+    input.value = 0
+}
 
 function getResult() {
     newNumber = +input.value
