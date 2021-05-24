@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo</title>
+</head>
+
+<body>
+    <h2 id='cash'> </h2>
+    <h2>Add animal</h2>
+    <div>
+        <label for="name">Name:</label>
+        <input type='text' name='name'id='animal-name'> <br>
+        <label for="cost">Cost:</label>
+        <input type='number' name='cost' id='animal-cost'><br>
+        <label for="lifespan">Lifespan (in minutes):</label>
+        <input type='number' name='lifespan' id='animal-lifespan'><br>
+    </div>
+    <button onclick="send()">Add animal!</button>
+    <h2>Animals in ZOO</h2>
+    <ul id='animal-list'>
+
+    </ul>
+</body>
+<script src="js/zoo.js"></script>
+</html>
